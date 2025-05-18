@@ -1,0 +1,29 @@
+/* src/components/AlertMonitor.css */
+.alert-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .alert {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white;
+    border-left: 5px solid;
+  }
+  
+  .alert.high {
+    border-left-color: #ff4444;
+  }
+  
+  .alert button {
+    margin-top: 8px;
+    padding: 5px 10px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+  }

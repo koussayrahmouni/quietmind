@@ -1,0 +1,165 @@
+/* Container for the login form */
+.login-form-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gradient border animation */
+.gradient-border-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-border-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #007bff, #00ff88, #007bff);
+    background-size: 300% 300%;
+    z-index: -1;
+    animation: gradientAnimation 6s ease infinite;
+    border-radius: inherit;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Input field styling */
+.login-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.login-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button styling */
+.login-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+.login-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Sign-up link styling */
+.sign-up-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.sign-up-link:hover {
+    color: #00ff88;
+}
+
+/* Status message styling */
+.status-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 12px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.status-message.success {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+    border: 2px solid rgba(40, 167, 69, 0.2);
+}
+
+.status-message.error {
+    color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 2px solid rgba(220, 53, 69, 0.2);
+}
+
+/* Background animation for the page */
+.login-page-background {
+    position: relative;
+    overflow: hidden;
+}
+
+.login-page-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(40, 167, 69, 0.1));
+    z-index: -1;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}

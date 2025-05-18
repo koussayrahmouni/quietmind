@@ -1,0 +1,83 @@
+.dashboard-container {
+    padding: 1rem;
+    font-family: sans-serif;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .panels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .panel {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 0.75rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button.control-btn {
+    margin-bottom: 1rem;
+  }
+  
+  button.control-btn.active {
+    background-color: #f66;
+    color: white;
+  }
+  
+  .results {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .result-card {
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem 0;
+  }
+  
+  .result-card:last-child {
+    border-bottom: none;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 0.5rem;
+  }
+  
+  .result.normal {
+    border-left: 4px solid green;
+    padding-left: 0.5rem;
+  }
+  
+  .result.critical {
+    border-left: 4px solid red;
+    padding-left: 0.5rem;
+  }
+  

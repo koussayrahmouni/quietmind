@@ -1,0 +1,17 @@
+.white-text {
+  color: white;
+}
+
+.dark-background {
+  background-color: #333;
+  color: white;
+}
+
+.child-image-container {
+  text-align: center;
+}
+
+.child-image {
+  max-width: 100%;
+  height: auto;
+}

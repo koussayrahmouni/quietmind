@@ -1,0 +1,22 @@
+/* In your main CSS file */
+.crisis-alerts {
+    border: 2px solid #ff4d4f;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #fff2f0;
+  }
+  
+  .ant-list-item {
+    transition: background-color 0.3s;
+  }
+  
+  .ant-list-item:hover {
+    background-color: #fff2f0;
+  }
+  
+  /* For toast notifications */
+  .Toastify__toast--error {
+    background-color: #ff4d4f;
+    color: white;
+  }
